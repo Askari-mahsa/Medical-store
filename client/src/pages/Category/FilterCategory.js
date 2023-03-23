@@ -1,9 +1,12 @@
 import Header from "components/common/header/Header";
 import React from "react";
 import Checkbox from "components/common/Checkbox/CheckBox";
-import CardOverlay from "components/common/cardOverlay/CardOverlay";
+// import CardOverlay from "components/common/cardOverlay/CardOverlay";
 import { FilterCard } from "components/common/FilterCard/FilterCard";
-import { titlesSidebar } from "components/common/Checkbox/categoryList";
+import {
+	categoryList,
+	titlesSidebar,
+} from "components/common/Checkbox/categoryList";
 import Footer from "components/common/footer/Footer";
 
 export const FilterCategory = () => {
@@ -11,7 +14,7 @@ export const FilterCategory = () => {
 		<div>
 			<Header />
 			<div className="flex mt-3 justify-between mx-[5%] items-baseline">
-				<p>فیلتر</p>
+				<p className="font-bold text-lg">فیلتر</p>
 				<div>
 					<div class="flex justify-center">
 						<div className="mb-3 xl:w-[900px]">
@@ -55,10 +58,8 @@ export const FilterCategory = () => {
 			</div>
 			<div className="grid grid-flow-col mx-[4%] grid-cols-6 gap-6">
 				<div className="shadow-lg rounded-xl border-stone-600 shadow-stone-400 bg-zinc-50 col-span-1 ">
-					{titlesSidebar.map((item) => {
-						return <p className="mr-3 mt-2 text-sm">{item.title}</p>;
-						<Checkbox />;
-					})}
+					<p className="mr-4 mt-8 mb-4 font-bold text-md">دسته بندی</p>
+					<Checkbox />
 				</div>
 				<div className="col-span-5">
 					<FilterCard />

@@ -1,8 +1,16 @@
 export const categoryList = [
 	{ id: "1", status: false, lable: "غذاخوری" },
-	{ id: "2", status: false, lable: "سرگرمی و اموزش" },
+	{ id: "2", status: false, lable: "سرگرمی" },
 	{ id: "3", status: false, lable: "لوازم شخصی" },
-	{ id: "4", status: false, lable: "بهداشت و حمام" },
+	{ id: "4", status: false, lable: "حمام" },
+	{ id: "5", status: false, lable: "غذاخوری" },
+	{ id: "6", status: false, lable: " اموزش" },
+	{ id: "7", status: false, lable: "لوازم شخصی" },
+	{ id: "8", status: false, lable: "بهداشت " },
+	{ id: "9", status: false, lable: "غذاخوری" },
+	{ id: "10", status: false, lable: "سرگرمی و اموزش" },
+	{ id: "11", status: false, lable: "لوازم شخصی" },
+	{ id: "12", status: false, lable: "بهداشت و حمام" }
 ];
 export const rangeAge = [
 	{ id: "1", lable: "سال 0-1" },
@@ -11,15 +19,7 @@ export const rangeAge = [
 	{ id: "4", lable: "18-24 سال" },
 	{ id: "5", lable: "25-30 سال" },
 ];
-export const titlesSidebar = [
-	{
-		title: "دسته بندی",
-		id: "1",
-		body: { sub: "{غذاخوری,سرگرمی و اموزش, لوازم شخصی,بهداشت و حمام }" },
-	},
-	// { title: "بازه سنی", id: "2", body: { sub: "{}" } },
-	// { title: "قیمت", id: "3", body: { sub: "{}" } },
-];
+
 export const Product = [
 	{
 		id: 1,
